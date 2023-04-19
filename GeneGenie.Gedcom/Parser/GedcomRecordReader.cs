@@ -1042,6 +1042,12 @@ namespace GeneGenie.Gedcom.Parser
                                 case "UTF8":
                                     // this is correct, we will already have converted from utf8
                                     charset = GedcomCharset.UTF16LE;
+                                    enc = Encoding.UTF8;
+                                    break;
+                                case "UTF-8":
+                                    // this is correct, we will already have converted from utf8
+                                    charset = GedcomCharset.UTF16LE;
+                                    enc = Encoding.UTF8;
                                     break;
                                 case "ASCII":
                                     // yes, ASCII is the same as UTF8 but extended ascii spoils that
